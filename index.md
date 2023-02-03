@@ -66,7 +66,7 @@ This gave us approximately 12,401 bottles of red wine to extract and analyze. It
 
 As a team, we decided to use a mix of selenium and web API to scrape our data from Vivino. After placing the aforementioned conditions, we were able to retrieve 12,401 bottles of wine to analyze. After we extracted the wine, we used different features to retrieve the different characteristics of the wine. The description for these features can be seen below:
 
-|    Characteristics     |   Description    |
+|       Characteristics       |       Description       |
 |:-------------|:------------------|
 | Wine         | This section contains the name of the wine (label printed on bottle)  |
 | Winery       | The winery is where the grapes are grown.  |
