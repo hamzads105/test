@@ -57,11 +57,11 @@ end
 To gain an accurate representation of our data, we had to adjust filters on Vivino to suit the needs of our exploration. We changed the original settings to
 
 As we can see here, we chose to 
-Ship to: United States
-Region of production: United States
-State of production: California
-Price range: $0 - $500
-Rating: Any (above one star)
+1.  Ship to: United States
+2.  Region of production: United States
+3.  State of production: California
+4.  Price range: $0 - $500
+5.  Rating: Any (above one star)
 
 
 ##### Header 5
