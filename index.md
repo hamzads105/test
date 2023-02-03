@@ -54,7 +54,7 @@ end
 
 #### Understanding the Data
 
-To gain an accurate representation of our data, we had to adjust filters on Vivino to suit the needs of our exploration. We changed the original settings to
+
 
 As we can see here, we chose to 
 1.  Ship to: United States
