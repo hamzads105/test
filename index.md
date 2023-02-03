@@ -14,7 +14,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 Wine is often seen as an important segment of the culinary arts. Wine has existed for centuries, and the way that it has been produced, sourced, and bottled is constantly changing with the adoption of technology in farming. Wine consumption has steadily increased over the past twenty or so years, with the advent of major commercialization and the ‘new world’ joining the ranks of pre-existing major wine producers. Wine has also become a store of value, sometimes with returns even greater than the stock and bond markets. 
 
-https://raw.githubusercontent.com/hamzads105/test/main/images/1.png
+![Octocat](https://raw.githubusercontent.com/hamzads105/test/main/images/1.png)
 
 The motivation of this analysis is straightforward - we both love red wine and want to spread our love of red wine to our fellow peers. Wine is often seen as an expensive alcohol that requires capital for quality, and we want to prove that this is not the case. Some of the best wines that we have had cost as little as $12, yet, when we conducted some preliminary research for this project, our peers thought that the average price of wine cost around $30. This common misconception prevents college students from consuming wine and enjoying a beverage rich in history. 
 
