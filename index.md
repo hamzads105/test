@@ -124,7 +124,7 @@ Cabernet Sauvignon almost dominates the chart, with the exception of a Syrah whi
 Overall, we have managed to use different metrics to analyze red wine produced in California. Our dataset was robust, with over 12,000 wines scraped. Using price, ratings, year of production, regions, grape variety, and pairings, we were able to narrow down our “value for money” recommendations to 6 wines for every price category and occasion.
 
 
-#Methodology
+# Methodology
 
 The dataset that we took was a scraped dataset from vivino.com. Today, Vivino is the largest wine marketplace in the world. When scraping the dataset, we made sure to add pre-set conditions (filters) to be able to have a specific dataset for wines produced in California. 
 
