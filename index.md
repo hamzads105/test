@@ -62,6 +62,18 @@ As we can see here, we chose to
 4.  **Price range:** $0 - $500
 5.  **Rating:** Any (above one star)
 
+This gave us approximately 12,401 bottles of red wine to extract and analyze. It is important to note that this figure kept on changing as some wines were delisted while others might have been added. The number is different from the screenshot above as new red wines would have been added since we began scraping for this project. 
+
+As a team, we decided to use a mix of selenium and web API to scrape our data from Vivino. After placing the aforementioned conditions, we were able to retrieve 12,401 bottles of wine to analyze. After we extracted the wine, we used different features to retrieve the different characteristics of the wine. The description for these features can be seen below:
+
+|         |           |
+|:-------------|:------------------|
+| The rating   | The average rating of the wine. It ranges between 1.0 to 5.0. It is very rare to have a wine rated at 5.0.  |
+| review_count | The review count is the number of times a wine has been reviewed.  |
+| Country      | The country where the wine has been produced. In this, all the wines have been produced in the US. |
+| Subregion    | The subregion is the region in California where the wine has been produced (eg. napa valley). |
+| Price        | The price of the wine. In Vivino, most of the wines are given two prices. The main one is the discounted price and the one below that displayed price is the original price (basic e-commerce sales technique)  |
+| Year         | The year when the wine has been produced. Typically, the older the wine, the better it is. However, data shows something far more interesting. |
 
 ##### Header 5
 
