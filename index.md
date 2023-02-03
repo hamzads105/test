@@ -18,14 +18,14 @@ The motivation of this analysis is straightforward - we both love red wine and w
 
 Wine plays an important role in many countries, and is becoming increasingly important in American culture. The United States is now the 4th biggest producer of wine, after France, Italy, and Spain. Interestingly, the United States is the biggest consumer of wine, with an increasing number of individuals falling in love with this form of alcohol. We choose to specifically study wine from the US because of its growing demand and appreciation, alongside the fact that we both originally study in the US. We used Vivino, a powerful marketplace to analyze wine and extract our data. Vivino uses crowd-sourced data to personalize wine recommendations to its users, making it the premier platform to search for and buy the right wine. 
 
-## Justification
+# Justification
 
 In popular culture, wine is seen as an alcoholic beverage purchased and consumed for special occasions, at restaurants with family, friends, and business colleagues. Wine can be classified into three major categories - red, white, and rose. Red wine is produced from the grapes and skin of red grapes, white wine is produced with the pulp of white grapes, and rose is produced with a mixture of red and white grapes. Through fermentation and the addition of sugar, raw grapes are processed into a drink that is enjoyed worldwide. 
 
 Since the data set would be too large to take into account all the different styles and types of wine, we decided to focus on red wine production in the US. Red wine is the most popular style of wine, with prices ranging from as little as $2 to over $15,000. This not only makes it exciting to analyze but also provides depth to the data we can extract. Additionally, the different characteristics of wine, along with the sheer variety of styles and grapes within red wine production, make it a topic worth exploring. 
 
 
-### Aim
+# Aim
 
 To provide an accurate analysis of which ones truly represent value for money from the US region, we needed to probe and ask a specific set of questions. Amongst many of the questions we aimed to answer, a few key thoughts were:
 
