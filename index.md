@@ -12,7 +12,14 @@ Wine is often seen as an important segment of the culinary arts. Wine has existe
 
 In popular culture, wine is seen as an alcoholic beverage purchased and consumed for special occasions, at restaurants with family, friends, and business colleagues. Wine can be classified into three major categories - red, white, and rose. Red wine is produced from the grapes and skin of red grapes, white wine is produced with the pulp of white grapes, and rose is produced with a mixture of red and white grapes. Through fermentation and the addition of sugar, raw grapes are processed into a drink that is enjoyed worldwide. 
 
-The motivation of this analysis is straightforward - we both love red wine and want to spread our love of red wine to our fellow peers. Wine is often seen as an expensive alcohol that requires capital for quality, and we want to prove that this is not the case. Some of the best wines that we have had cost $20, yet, when we conducted some preliminary research for this project, our peers thought that the average price of wine cost around $30. This common misconception prevents college students from consuming wine and enjoying a beverage rich in history. 
+Since the data set would be too large to take into account all the different styles and types of wine, we decided to focus on red wine production in the US. Red wine is the most popular style of wine, with prices ranging from as little as $2 to over $15,000. This not only makes it exciting to analyze but also provides depth to the data we can extract. Additionally, the different characteristics of wine, along with the sheer variety of styles and grapes within red wine production, make it a topic worth exploring. 
+
+# Aim
+
+To provide an accurate analysis of which ones truly represent value for money from the US region, we needed to probe and ask a specific set of questions. Amongst many of the questions we aimed to answer, a few key thoughts were:
+
+
+The motivation of this analysis is straightforward - we both love red wine and want to spread our love of red wine to our fellow peers. Wine is often seen as an expensive alcohol that requires capital for quality, and we want to prove that this is not the case. Some of the best wines that we have had cost as little as $12, yet, when we conducted some preliminary research for this project, our peers thought that the average price of wine cost around $30. This common misconception prevents college students from consuming wine and enjoying a beverage rich in history. 
 
 Wine plays an important role in many countries, and is becoming increasingly important in American culture. The United States is now the 4th biggest producer of wine, after France, Italy, and Spain. Interestingly, the United States is the biggest consumer of wine, with an increasing number of individuals falling in love with this form of alcohol. We choose to specifically study wine from the US because of its growing demand and appreciation, alongside the fact that we both originally study in the US. We used Vivino, a powerful marketplace to analyze wine and extract our data. Vivino uses crowd-sourced data to personalize wine recommendations to its users, making it the premier platform to search for and buy the right wine. 
 
@@ -29,6 +36,12 @@ Since the data set would be too large to take into account all the different sty
 
 To provide an accurate analysis of which ones truly represent value for money from the US region, we needed to probe and ask a specific set of questions. Amongst many of the questions we aimed to answer, a few key thoughts were:
 
+1.  What year of production yields the highest rating of red wine (California and its regions)?
+2.  How does price impact red wine ratings in California?
+3.  What are the most and least popular red wine grapes grown in California?
+4.  What are the best food pairings (vegetarian cuisine, steak) that go well with red wine?
+
+
 What year of production yields the highest rating of red wine (California and its regions)?
 How does price impact red wine ratings in California?
 What are the most and least popular red wine grapes grown in California?
@@ -36,21 +49,6 @@ What are the best food pairings (vegetarian cuisine, steak) that go well with re
 
 From these main questions, we were able to dive deeper into the data and create sub-questions that really helped us focus on the quality of red wine in California. 
 
-<!-- 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-``` -->
 
 # Understanding the Data
 To gain an accurate representation of our data, we had to adjust filters on Vivino to suit the needs of our exploration. We changed the original settings to
@@ -158,83 +156,59 @@ When coming to food pairings, we decided to switch to the API because we wanted 
 
 In terms of data cleaning, we were fortunate enough to get correct data and no missing values. The variables are consistent across the whole dataset as they follow the same format. In order to analyze and plot our data, we used python : pandas, seaborn, numpy, matplotlib. 
 
+# Limitations
+
+Although our model is robust, there are some clear limitations to it. First of all, we could not extract every characteristic of red wine. This is because scraping certain characteristics such as oakiness, the presence of red fruit, the presence of tobacco, etc would require us to go to every individual page of wine and scrape this information. Because we had over 12,000 wines in our data set, scraping each individual page would be extremely time-consuming and counterproductive. But, because we didn't scrape every characteristic, it does mean that our model and results have room for improvement. If we had looked at each individual page, there is a chance that our results would have differed slightly. Additionally, our filters only allowed the price of wine to range from $0-$500. Although this would not affect our model to a large extent (as we were looking specifically for value-for-money wine), it would have increased the number of wines in our dataset, allowing for more complex analysis. Furthermore, since Vivino is an active site, the number of wines uploaded and reviewed changes frequently. This means that over the course of our project, it is possible that the number of reviews could have increased for a wine that was close to being the best wine, as the review count was an important asset to the algorithm. Lastly, there is an inherent bias in the data set because reviews in Vivino are not verified. 
+
+# Conclusion & Results: 
+
+The aim of this project was to provide wines that our college peers could afford and enjoy without breaking the bank. The three wines that came out on top are commercially sold in supermarkets worldwide, have a great reputation amongst the wine community, and are cabinet staples that always deliver, no matter the vintage. These wines can be seen below:
+
+![Octocat](https://raw.githubusercontent.com/hamzads105/test/main/images/14.png)
+
+**Meiomi Pinot Noir -**
+
+![Octocat](https://raw.githubusercontent.com/hamzads105/test/main/images/15.png)
+
+|       Name       |       Price       |       Reviews       |       Review count       |       Grape         |
+|:-------------|:------------------|
+| Meiomi Pinot Noir         | $17.99  | 2005  | 16347  | Pinot Noir  |
+
+**Bonanza Cabarnet Sauvignon Lot N.V**
+
+![Octocat](https://raw.githubusercontent.com/hamzads105/test/main/images/16.png)
+
+|       Name       |       Price       |       Reviews       |       Review count       |       Grape         |
+|:-------------|:------------------|
+| Bonanza Cabernet Sauvignon       |  $16.98  | N.V  | 26546  | Cabernet Sauvignon   |
+
+**1000 Stories Zinfandel 2017**
+![Octocat](https://raw.githubusercontent.com/hamzads105/test/main/images/17.png)
+
+|       Name       |       Price       |       Reviews       |       Review count       |       Grape         |
+|:-------------|:------------------|
+| 1000 stories Zinfandel     |  $19.99  | 2017  | 9521  | Zinfandel   |
+
+We used three characteristics to derive our top three “value for money” wines - price, review count, and overall rating. The conditions we used were as follows:
+
+|       Price       |       Review Count       |       Rating       |
+|:-------------|:------------------|
+| >$15 & <$25     |  Ascending Order  | > 4  |
+
+We chose a rating of 4 because, for the price point, any wine rated above 4 is rare. We also chose our $15 - $25 price range because any wine below 15 would have not made the 4+ rating. We needed our review count to be in ascending order because the higher the review count, the more likely it would be enjoyed by anyone purchasing the bottle. A screenshot of our code can be seen below:
+
+![Octocat](https://raw.githubusercontent.com/hamzads105/test/main/images/18.png)
+
+When we were studying in the US, we managed to try all three of these wines (as they are commercially sold in supermarkets) and were extremely surprised to see the same wines on our list. Meoimi is an extremely popular wine, and our personal favorite out of the three. It is easy to drink, affordable, and provides the best value for money from the Californian market.
+
+Appendix:
+https://econlife.com/2020/01/wine-consumption-changes/
+\https://en.wikipedia.org/wiki/Vivino
+https://napavintners.com/press/press_release_detail.asp?ID_News=28
+https://www.vivino.com/GB/en/meiomi-pinot-noir/w/1136137
+https://www.vivino.com/GB/en/bonanza-california-cabernet-sauvignon-lot/w/6886895
+https://www.vivino.com/GB/en/ten-zero-zero-stories-zinfandel/w/2918277
 
 
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
